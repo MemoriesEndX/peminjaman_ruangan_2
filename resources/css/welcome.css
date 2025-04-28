@@ -1,0 +1,84 @@
+/* Custom styles for Bantuan section in welcome page */
+
+#bantuan {
+    background-color: #f9fafb; /* light background */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+    color: #1b1b18;
+}
+
+#bantuan .section-title h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #f53003; /* accent color */
+}
+
+#bantuan .section-title p {
+    font-size: 1rem;
+    color: #706f6c;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bantuan .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+#bantuan .col-md-4 {
+    flex: 1 1 300px;
+    max-width: 320px;
+}
+
+#bantuan .single-skill {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+}
+
+#bantuan .single-skill:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+#bantuan .skill-icon {
+    margin-bottom: 1rem;
+}
+
+#bantuan .skill-icon svg {
+    width: 50px;
+    height: 50px;
+    fill: #f53003;
+}
+
+#bantuan h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1b1b18;
+}
+
+#bantuan p {
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #bantuan .row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #bantuan .col-md-4 {
+        max-width: 100%;
+    }
+}
