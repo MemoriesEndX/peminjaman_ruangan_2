@@ -9,11 +9,23 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                </div>
+<div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+        {{ __('Dashboard') }}
+    </x-nav-link>
+    <x-nav-link :href="route('profile.edit')" :active="request()->routeIs('profile.edit')">
+        {{ __('Profile') }}
+    </x-nav-link>
+    <x-nav-link :href="route('booking.create')" :active="request()->routeIs('booking.create')">
+        {{ __('Halaman Booking') }}
+    </x-nav-link>
+    <x-nav-link href="#" :active="false">
+        {{ __('Settings') }}
+    </x-nav-link>
+    <x-nav-link :href="route('virtual-tour')" :active="request()->routeIs('virtual-tour')">
+        {{ __('Virtual Tour Teknik UNTIRTA') }}
+    </x-nav-link>
+</div>
             </div>
 
             <!-- Settings Dropdown -->

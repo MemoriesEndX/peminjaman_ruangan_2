@@ -13,6 +13,10 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/virtual-tour', function () {
+    return view('virtual-tour');
+})->middleware(['auth', 'verified'])->name('virtual-tour');
+
 // routes/web.php
 Route::middleware(['auth'])->group(function () {
     Route::get('/profile/edit', function () {

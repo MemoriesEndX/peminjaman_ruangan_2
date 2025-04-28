@@ -9,8 +9,9 @@
             <nav class="space-y-4">
                 <a href="{{ route('dashboard') }}" class="block text-gray-700 hover:text-blue-600">Dashboard</a>
                 <a href="#" class="block text-gray-700 hover:text-blue-600">Profile</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-600">Room Booking</a>
+                <a href="{{ route('booking.create') }}" class="block text-gray-700 hover:text-blue-600">Halaman Booking</a>
                 <a href="#" class="block text-gray-700 hover:text-blue-600">Settings</a>
+                <a href="{{ route('virtual-tour') }}" class="block text-gray-700 hover:text-blue-600">Virtual Tour Teknik UNTIRTA</a>
             </nav>
         </div>
     </aside>
