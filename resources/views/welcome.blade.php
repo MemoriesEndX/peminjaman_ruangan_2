@@ -12,8 +12,8 @@
     <!-- Navigation -->
     <nav class="bg-white shadow-md p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold text-gray-800">
-                UNTIRTA
+            <div class="h-12">
+                <img src="{{ asset('images/logo-untirta.png') }}" alt="Logo UNTIRTA" class="h-full w-auto">
             </div>
             @if (Route::has('login'))
                 <div class="space-x-4">
